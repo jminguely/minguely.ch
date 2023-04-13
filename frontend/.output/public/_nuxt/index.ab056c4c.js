@@ -1,0 +1,1 @@
+import{a as e,b as t,o as n,e as o}from"./entry.f6fb3109.js";const s={},_=o("h1",{class:"text-3xl font-bold underline text-red-500"},"Hello world!",-1),c=[_];function l(r,a){return n(),t("div",null,c)}const i=e(s,[["render",l]]);export{i as default};

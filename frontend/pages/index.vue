@@ -1,5 +1,5 @@
-<style scoped>
-html {
+<style>
+body {
   background: grey;
 }
 </style>
@@ -7,5 +7,6 @@ html {
 <template>
   <div>
     <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+    <a href="/projects">Projects</a>
   </div>
 </template>
