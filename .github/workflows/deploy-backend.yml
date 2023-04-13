@@ -36,7 +36,7 @@ jobs:
         env:
           DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
         with:
-          flags: "-avzrl --delete"
+          flags: "-a"
           options: ""
           ssh_options: ""
           src: "./backend"
