@@ -1,0 +1,49 @@
+name: Deploy backend
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/deploy-backend.yml
+      - backend/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          cache: "yarn"
+          cache-dependency-path: "./backend/yarn.lock"
+
+      - name: 🧶 Yarn this beauty
+        run: yarn
+
+      - name: 🔨 Build admin panel
+        run: yarn build
+
+      - name: 🚀 Ship the whole thin
+        id: deploy
+        uses: Pendect/action-rsyncer@v1.1.0
+        env:
+          DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+        with:
+          flags: "-avzrl --delete"
+          options: ""
+          ssh_options: ""
+          src: "./backend"
+          dest: ${{secrets.DEPLOY_DEST}}
+
+      - name: 🧨 Kickstart node server (backend)
+        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/765706/restart/
+
+      - name: 🧨 Kickstart node server (frontend)
+        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/765707/restart/

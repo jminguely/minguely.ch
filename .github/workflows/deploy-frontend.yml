@@ -1,0 +1,50 @@
+name: Deploy frontend
+
+on:
+  push:
+    branches:
+      - refresh
+    paths:
+      - .github/workflows/deploy-frontend.yml
+      - frontend/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
+          cache-dependency-path: './frontend/yarn.lock'
+
+      - name: 🧶 Yarn this beauty
+        run: yarn
+
+      - name: ⚡️ Generate the application
+        run: yarn generate
+
+      - name: 🔗 Creates symlink
+        run: |
+          ln -s /home/jminguely/www/cdc-new/shared/frontend/static/wp-content ./dist/wp-content
+
+      - name: 🚀 Ship the whole thin
+        id: deploy
+        uses: Pendect/action-rsyncer@v1.1.0
+        env:
+          DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+        with:
+          flags: '-auvzrl --delete'
+          options: ''
+          ssh_options: ''
+          src: './frontend'
+          dest: ${{secrets.DEPLOY_DEST_NEW}}
+
+      - name: 🧨 Kickstart node server (frontend)
+        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/765707/restart/
