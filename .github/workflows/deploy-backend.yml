@@ -20,7 +20,7 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: "14"
           cache: "yarn"
           cache-dependency-path: "./backend/yarn.lock"
 
@@ -40,10 +40,10 @@ jobs:
           options: ""
           ssh_options: ""
           src: "./backend"
-          dest: ${{secrets.DEPLOY_DEST}}
+          dest: ${{vars.DEPLOY_DEST}}
 
       - name: 🧨 Kickstart node server (backend)
-        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/765706/restart/
+        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/777539/restart/
 
       - name: 🧨 Kickstart node server (frontend)
-        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/765707/restart/
+        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/777538/restart/
