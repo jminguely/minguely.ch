@@ -1,5 +1,3 @@
-import gql from "@rollup/plugin-graphql"
-
 export default defineNuxtConfig({
   modules: ['@nuxtjs/apollo'],
 
@@ -20,7 +18,4 @@ export default defineNuxtConfig({
     },
   },
 
-  vite: {
-    plugins: [gql()]
-  },
 })
