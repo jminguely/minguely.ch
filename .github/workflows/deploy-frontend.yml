@@ -27,8 +27,8 @@ jobs:
       - name: 🧶 Yarn this beauty
         run: yarn
 
-      - name: ⚡️ Generate the application
-        run: yarn generate
+      - name: ⚡️ Build the application
+        run: yarn build
 
       - name: 🚀 Ship the whole thin
         id: deploy
@@ -39,5 +39,8 @@ jobs:
           flags: "-auvzrl --delete"
           options: ""
           ssh_options: ""
-          src: "./frontend/.output/public/*"
+          src: "./frontend/.output/server/*"
           dest: ${{vars.DEPLOY_DEST}}/frontend
+
+      - name: 🧨 Kickstart node server (frontend)
+        run: curl --basic --user '${{ secrets.ALWAYSDATA_API }} account=jminguely:' --data '' --request POST https://api.alwaysdata.com/v1/site/777538/restart/
