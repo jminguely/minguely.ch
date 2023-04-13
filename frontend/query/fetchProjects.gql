@@ -1,0 +1,21 @@
+query {
+  projects {
+    data {
+      id
+      attributes {
+        title
+        subtitle
+        description
+        external_url
+        cover {
+          data {
+            id
+            attributes {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}
