@@ -39,7 +39,7 @@ jobs:
           flags: "-auvzrl --delete"
           options: ""
           ssh_options: ""
-          src: "./frontend/.output/server/*"
+          src: "./frontend/*"
           dest: ${{vars.DEPLOY_DEST}}/frontend
 
       - name: 🧨 Kickstart node server (frontend)
