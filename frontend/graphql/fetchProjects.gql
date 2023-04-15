@@ -1,9 +1,10 @@
-query {
-  projects {
+query getProjects($category: String!) {
+  projects(filters: { Category: { eq: $category } }) {
     data {
       id
       attributes {
         title
+        Category
         subtitle
         description
         external_url

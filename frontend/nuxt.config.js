@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/apollo'],
+  modules: ['@nuxtjs/apollo', '@nuxt/image-edge'],
 
   apollo: {
     clients: {
@@ -11,11 +11,28 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  image: {
+    strapi: {
+      baseURL: 'https://api.minguely.ch/',
+    },
+  },
+
   postcss: {
     plugins: {
+      'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+  components: true,
+
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400..900&display=swap'
+      }
+    ]
+  }
 
 })
