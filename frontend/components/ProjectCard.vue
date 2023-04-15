@@ -2,7 +2,7 @@
   <a
     :href="project.attributes.external_url"
     target="_blank"
-    class="project-card"
+    class="project-card bg-gray-900"
   >
     <div class="content">
       <div class="headings">
@@ -46,19 +46,18 @@ export default {
 
 <style scoped lang="postcss">
 .project-card {
+  @apply aspect-video md:aspect-cine;
   position: relative;
   display: block;
   text-decoration: none;
   color: black;
   display: flex;
   justify-content: space-between;
-  aspect-ratio: 6 / 2;
   width: 100%;
   margin-bottom: 15px;
   border-radius: 7px;
   overflow: hidden;
   box-sizing: border-box;
-  background: #333;
 
   @screen 2xl {
     width: 50%;
@@ -80,8 +79,9 @@ export default {
       background: #000000aa;
     }
 
-    img {
-      transform: scale(1.05) rotate(0.25deg);
+    img.loaded {
+      transform: scale(1.1) rotate(0.25deg);
+      filter: grayscale(1) brightness(0.5);
     }
   }
 
@@ -129,11 +129,14 @@ export default {
     z-index: 0;
     object-fit: cover;
     transform: scale(1) rotate(0deg);
-    transition: transform ease 0.3s, opacity 0.3s;
+    transition: transform 2s, opacity 2s, filter 2s;
     opacity: 0;
+    filter: grayscale(1);
 
     &.loaded {
       opacity: 1;
+      filter: grayscale(0);
+      transform: scale(1.05) rotate(0deg);
     }
   }
 }

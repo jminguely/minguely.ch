@@ -1,4 +1,4 @@
-query getProjects($category: String!) {
+query fetchProjects($category: String!) {
   projects(filters: { Category: { eq: $category } }) {
     data {
       id

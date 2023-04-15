@@ -9,7 +9,14 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        'cine': '2.35 / 1',
+      },
+      transitionDuration: {
+        '3000': '3000ms',
+      }
+    }
   },
   plugins: [],
 }

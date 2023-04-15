@@ -17,6 +17,13 @@ export default defineNuxtConfig({
     },
   },
 
+  vite: {
+    compilerOptions: {
+      isCustomElement: true
+    }
+  },
+
+
   postcss: {
     plugins: {
       'tailwindcss/nesting': {},

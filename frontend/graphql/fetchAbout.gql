@@ -1,0 +1,28 @@
+query fetchAbout {
+  about {
+    data {
+      id
+      attributes {
+        Biography
+        Resume {
+          id
+          Title
+          Items {
+            id
+            Title
+            Text
+          }
+        }
+        Cover {
+          data {
+            id
+            attributes {
+              url
+              size
+            }
+          }
+        }
+      }
+    }
+  }
+}

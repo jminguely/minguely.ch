@@ -8,7 +8,7 @@
       <h1>Julien Minguely</h1>
       <p>multimedia and other stuff</p>
       <nav class="main-nav">
-        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/">About</nuxt-link>
         <nuxt-link to="/video">Video</nuxt-link>
         <nuxt-link to="/music">Music</nuxt-link>
         <!-- <a class="{{ currentNav === 'music' && 'active' }}" href="./music.html">Music<span>→</span></a> -->
