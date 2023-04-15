@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_about_resumes",
+  "info": {
+    "displayName": "Resume"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Items": {
+      "displayName": "Items",
+      "type": "component",
+      "repeatable": true,
+      "component": "about.items"
+    }
+  }
+}
