@@ -11,13 +11,12 @@ module.exports = {
   theme: {
     extend: {
       aspectRatio: {
-        'cine': '2.35 / 1',
+        cine: "2.35 / 1",
       },
       transitionDuration: {
-        '3000': '3000ms',
-      }
-    }
+        3000: "3000ms",
+      },
+    },
   },
   plugins: [],
-}
-
+};

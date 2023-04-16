@@ -28,20 +28,11 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "Category": {
       "type": "enumeration",
-      "enum": [
-        "video",
-        "music",
-        "web"
-      ]
+      "enum": ["video", "music", "web"]
     }
   }
 }
