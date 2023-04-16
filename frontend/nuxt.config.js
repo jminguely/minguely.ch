@@ -1,6 +1,19 @@
 export default defineNuxtConfig({
   modules: ["@nuxtjs/apollo", "@nuxt/image-edge"],
 
+  buildModules: [
+    '@nuxtjs/google-fonts'
+  ],
+
+  googleFonts: {
+    families: {
+      Rubik: {
+        wght: [100 + '..' + 900],
+        ital: [100 + '..' + 900],
+      },
+    }
+  },
+
   apollo: {
     clients: {
       default: {
@@ -32,12 +45,4 @@ export default defineNuxtConfig({
   },
   components: true,
 
-  head: {
-    link: [
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400..900&display=swap",
-      },
-    ],
-  },
 });
