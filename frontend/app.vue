@@ -1,6 +1,6 @@
 <template>
   <div class="site-wrapper" :class="{ menuOpen }">
-    <Sidebar :menuOpen="this.menuOpen" @toggleMenu="toggleMenu" />
+    <Sidebar :menuOpen="menuOpen" @toggleMenu="toggleMenu" />
     <main class="site-main">
       <NuxtPage />
     </main>
