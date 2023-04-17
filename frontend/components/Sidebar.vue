@@ -1,44 +1,68 @@
 <template>
   <div>
-    <button id="menuToggle" class="menuToggle">
+    <button id="menuToggle" class="menuToggle" @click="toggleMenu()">
       <span class="open">≈</span>
       <span class="close">⤫</span>
     </button>
     <div class="sidebar">
-      <h1>Julien Minguely</h1>
-      <p>multimedia and other stuff</p>
-      <nav class="main-nav">
-        <nuxt-link to="/">About</nuxt-link>
-        <nuxt-link to="/video">Video</nuxt-link>
-        <nuxt-link to="/music">Music</nuxt-link>
-        <!-- <a class="{{ currentNav === 'music' && 'active' }}" href="./music.html">Music<span>→</span></a> -->
-      </nav>
-      <nav class="socials">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://instagram.com/jminguely"
-        >
-          Instagram
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://vimeo.com/jminguely">
-          Vimeo
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://github.com/jminguely">
-          Github
-        </a>
-        <a target="_blank" rel="noreferrer" href="mailto:julien@minguely.ch">
-          Mail
-        </a>
-      </nav>
+      <div class="sidebar-content">
+        <h1>Julien Minguely</h1>
+        <p>multimedia and other stuff</p>
+        <nav class="main-nav">
+          <nuxt-link @click="toggleMenu()" to="/">About</nuxt-link>
+          <nuxt-link @click="toggleMenu()" to="/video">Video</nuxt-link>
+          <nuxt-link @click="toggleMenu()" to="/music">Music</nuxt-link>
+          <!-- <a class="{{ currentNav === 'music' && 'active' }}" href="./music.html">Music<span>→</span></a> -->
+        </nav>
+        <nav class="socials">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/jminguely"
+          >
+            Instagram
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://vimeo.com/jminguely"
+          >
+            Vimeo
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/jminguely"
+          >
+            Github
+          </a>
+          <a target="_blank" rel="noreferrer" href="mailto:julien@minguely.ch">
+            Mail
+          </a>
+        </nav>
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped lang="postcss">
+<script>
+export default {
+  props: {
+    menuOpen: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  methods: {
+    toggleMenu() {
+      this.$emit("toggleMenu");
+    },
+  },
+};
+</script>
+
+<style lang="postcss">
 .main-nav {
-  display: flex;
-  flex-direction: column;
   margin-top: 1rem;
   border-top: 1px solid #ffffff33;
 
@@ -61,18 +85,9 @@
 .menuToggle {
   display: block;
   cursor: pointer;
-
-  .close {
-    display: none;
-  }
-}
-
-.menuToggle {
-  display: block;
-  cursor: pointer;
   position: fixed;
-  top: 30px;
-  left: 30px;
+  top: 5px;
+  left: 5px;
   font-size: 2rem;
   color: white;
   background: #4e6ec3;
@@ -94,38 +109,78 @@
   @screen md {
     display: none;
   }
+
+  .menuOpen & .close {
+    display: block;
+  }
+  .menuOpen & .open {
+    display: none;
+  }
 }
 
 .sidebar {
-  height: calc(100% - 40px);
   position: fixed;
   top: 0;
-  right: -50px;
-  min-width: 280px;
-  max-width: 300px;
-  transform: translateX(110%);
-  transition: all 0.3s ease;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
   z-index: 500;
-  padding-right: 60px;
+  transition: all 0.3s ease;
+  background: #99999999;
+  pointer-events: none;
+  opacity: 0;
+  backdrop-filter: blur(10px);
 
   @screen md {
     position: static;
-    background: #111;
+    min-width: 320px;
+    left: auto;
+    opacity: 1;
+    position: auto;
+    padding: 0;
+    backdrop-filter: none;
+    background: none;
+    pointer-events: auto;
+  }
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(100vw - 40px);
+  padding-right: 60px;
+  background: #111;
+  padding: 50px;
+  color: #888;
+  border-radius: 7px;
+  transform: translateX(-110%);
+  transition: all 0.3s ease 0.2s;
+
+  @screen md {
+    transform: none;
     color: white;
-    margin: 20px;
-    border-radius: 7px;
-    padding: 20px;
-    color: #888;
     display: flex;
     flex-direction: column;
-    min-width: 320px;
-    right: auto;
-    transform: none;
+    margin: 0;
+    height: 100%;
+    width: auto;
+    padding: 30px;
   }
 }
 
 .menuOpen {
+  overflow: hidden;
+
   .sidebar {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar-content {
     transform: translateX(0);
   }
 }

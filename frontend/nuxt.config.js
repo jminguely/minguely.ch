@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
+      'Space+Mono': true,
       Rubik: {
         wght: [100 + '..' + 900],
         ital: [100 + '..' + 900],

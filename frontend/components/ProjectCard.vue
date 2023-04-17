@@ -95,7 +95,7 @@ export default {
     opacity: 0.7;
     background: linear-gradient(to right, #000000dd, #00000000);
     padding: 2rem 6rem 2rem 2rem;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
   }
 
   .button {
@@ -107,7 +107,7 @@ export default {
     justify-content: center;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     background: #00000000;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
   }
 
   .title {

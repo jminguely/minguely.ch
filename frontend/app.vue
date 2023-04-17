@@ -1,23 +1,29 @@
 <template>
-  <div class="site-wrapper">
-    <Sidebar />
+  <div class="site-wrapper" :class="{ menuOpen }">
+    <Sidebar :menuOpen="this.menuOpen" @toggleMenu="toggleMenu" />
     <main class="site-main">
       <NuxtPage />
     </main>
   </div>
 </template>
 
+<script setup>
+const menuOpen = ref(false);
+
+function toggleMenu() {
+  menuOpen.value = !menuOpen.value;
+}
+
+useHead({
+  bodyAttrs: {
+    class: { "overflow-hidden": menuOpen },
+  },
+});
+</script>
+
 <style lang="postcss">
 html {
   background: #ccc;
-  width: 100vw;
-  height: 100vh;
-}
-
-body {
-  font-family: Rubik;
-  width: 100vw;
-  height: 100vh;
 }
 
 h1 {
@@ -49,21 +55,29 @@ a:hover {
 }
 
 ::selection {
-  background-color: #ffffff55;
+  background-color: #ffffff22;
 }
 
 .site-wrapper {
   display: flex;
+  width: calc(100vw - 80px);
+  margin: 20px 40px;
+
+  @screen md {
+    gap: 20px;
+    height: calc(100vh - 40px);
+    width: calc(100vw - 160px);
+    margin: 20px 80px;
+  }
 }
 
 .site-main {
   background: white;
-  margin: 20px 20px 20px 0;
   border-radius: 7px;
-  padding: 20px;
+  padding: 30px;
   color: #888;
   flex-grow: 1;
-  height: calc(100vh - 40px);
+  height: 100%;
   overflow: auto;
 }
 </style>

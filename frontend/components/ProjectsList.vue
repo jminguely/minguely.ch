@@ -1,5 +1,5 @@
 <template>
-  <div class="card-container">
+  <div class="card-container" v-if="data?.projects">
     <ProjectCard
       v-for="project in data.projects.data"
       :key="project.id"
