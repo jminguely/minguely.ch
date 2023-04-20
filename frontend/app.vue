@@ -27,11 +27,12 @@ html {
 }
 
 h1 {
-  font-size: 2em;
+  line-height: 1;
   color: #4e6ec3;
   font-weight: 900;
   font-style: italic;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 h2,
@@ -59,25 +60,29 @@ a:hover {
 }
 
 .site-wrapper {
-  display: flex;
-  width: calc(100vw - 80px);
-  margin: 20px 40px;
+  @apply flex max-w-7xl;
+  width: calc(100vw - 50px);
+  margin: 10px 10px 20px 40px;
 
-  @screen md {
+  @screen lg {
     gap: 20px;
     height: calc(100vh - 40px);
     width: calc(100vw - 160px);
-    margin: 20px 80px;
+    margin: 20px auto;
   }
 }
 
 .site-main {
   background: white;
   border-radius: 7px;
-  padding: 30px;
+  padding: 20px;
   color: #888;
   flex-grow: 1;
   height: 100%;
   overflow: auto;
+
+  @screen lg {
+    padding: 30px;
+  }
 }
 </style>

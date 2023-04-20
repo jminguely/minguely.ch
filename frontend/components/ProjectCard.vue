@@ -46,7 +46,7 @@ export default {
 
 <style scoped lang="postcss">
 .project-card {
-  @apply aspect-video md:aspect-cine;
+  @apply aspect-square md:aspect-video lg:aspect-cine;
   position: relative;
   display: block;
   text-decoration: none;
@@ -58,11 +58,6 @@ export default {
   border-radius: 7px;
   overflow: hidden;
   box-sizing: border-box;
-
-  @screen 2xl {
-    width: 50%;
-    margin: 10px;
-  }
 
   &:last-of-type {
     margin-bottom: 0px;
@@ -94,8 +89,12 @@ export default {
     justify-content: space-between;
     opacity: 0.7;
     background: linear-gradient(to right, #000000dd, #00000000);
-    padding: 2rem 6rem 2rem 2rem;
+    padding: 2rem;
     transition: all 1s ease;
+
+    @screen md {
+      padding: 2rem 6rem 2rem 2rem;
+    }
   }
 
   .button {
@@ -111,11 +110,28 @@ export default {
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.25rem;
+
+    @screen md {
+      font-size: 2rem;
+    }
   }
 
   .subtitle {
     font-weight: 500;
+    font-size: 0.8rem;
+
+    @screen md {
+      font-size: 1rem;
+    }
+  }
+
+  .credits {
+    font-size: 0.8rem;
+
+    @screen md {
+      font-size: 1rem;
+    }
   }
 
   img {

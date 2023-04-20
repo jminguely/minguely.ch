@@ -12,6 +12,7 @@
           <nuxt-link @click="toggleMenu()" to="/">About</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/video">Video</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/music">Music</nuxt-link>
+          <nuxt-link @click="toggleMenu()" to="/dev">Dev</nuxt-link>
           <!-- <a class="{{ currentNav === 'music' && 'active' }}" href="./music.html">Music<span>→</span></a> -->
         </nav>
         <nav class="socials">
@@ -67,7 +68,7 @@ export default {
   border-top: 1px solid #ffffff33;
 
   a {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
     margin: 0 0 0.5rem 0;
     padding: 0.5rem 0.1rem;
@@ -86,15 +87,15 @@ export default {
   display: block;
   cursor: pointer;
   position: fixed;
-  top: 5px;
-  left: 5px;
-  font-size: 2rem;
+  top: 15px;
+  left: 10px;
+  font-size: 1.2rem;
   color: white;
   background: #4e6ec3;
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   z-index: 999;
   box-shadow: 0 0 10px #33333388;
 
@@ -106,7 +107,7 @@ export default {
     background: #2e4ea3;
   }
 
-  @screen md {
+  @screen lg {
     display: none;
   }
 
@@ -133,12 +134,11 @@ export default {
   opacity: 0;
   backdrop-filter: blur(10px);
 
-  @screen md {
+  @screen lg {
     position: static;
     min-width: 320px;
     left: auto;
     opacity: 1;
-    position: auto;
     padding: 0;
     backdrop-filter: none;
     background: none;
@@ -158,8 +158,9 @@ export default {
   border-radius: 7px;
   transform: translateX(-110%);
   transition: all 0.3s ease 0.2s;
+  overflow: auto;
 
-  @screen md {
+  @screen lg {
     transform: none;
     color: white;
     display: flex;

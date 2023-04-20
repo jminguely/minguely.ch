@@ -32,7 +32,7 @@
     },
     "Category": {
       "type": "enumeration",
-      "enum": ["video", "music", "web"]
+      "enum": ["video", "music", "dev"]
     }
   }
 }
