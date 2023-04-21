@@ -15,9 +15,20 @@ function toggleMenu() {
 }
 
 useHead({
+  titleTemplate: (title) => `minguely.ch - ${title}`,
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  charset: "utf-8",
   bodyAttrs: {
     class: { "overflow-hidden": menuOpen },
   },
+  meta: [
+    {
+      hid: "description",
+      name: "description",
+      content:
+        "Portfolio of the swiss based multidisciplinary artist Julien Minguely. Works in the field of Video, Music and Computer Science.",
+    },
+  ],
 });
 </script>
 

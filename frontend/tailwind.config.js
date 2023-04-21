@@ -17,9 +17,9 @@ module.exports = {
         3000: "3000ms",
       },
       fontFamily: {
-        'sans': ['Rubik', 'sans-serif'],
-        'mono': ['"Space+Mono"', 'sans-serif'],
-      }
+        sans: ["Rubik", "sans-serif"],
+        mono: ['"Space+Mono"', "sans-serif"],
+      },
     },
   },
   plugins: [],

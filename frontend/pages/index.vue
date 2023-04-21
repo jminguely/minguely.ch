@@ -43,6 +43,10 @@
 import fetchAbout from "~/graphql/fetchAbout.gql";
 
 const { data } = await useAsyncQuery(fetchAbout);
+
+useHead({
+  title: "about",
+});
 </script>
 
 <script>
