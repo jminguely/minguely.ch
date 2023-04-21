@@ -17,6 +17,7 @@
       <p>→</p>
     </div>
     <nuxt-img
+      v-if="project.attributes.cover.data"
       :class="{ loaded }"
       provider="strapi"
       :alt="`${project.attributes.title}: ${project.attributes.subtitle}`"
