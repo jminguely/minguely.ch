@@ -1,7 +1,7 @@
 <template>
   <div>
     <button id="menuToggle" class="menuToggle" @click="toggleMenu()">
-      <span class="open">≈</span>
+      <span class="open">≡</span>
       <span class="close">⤫</span>
     </button>
     <div class="sidebar">
