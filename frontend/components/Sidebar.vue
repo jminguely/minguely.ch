@@ -12,7 +12,7 @@
           <nuxt-link @click="toggleMenu()" to="/">About</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/video">Video</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/music">Music</nuxt-link>
-          <nuxt-link @click="toggleMenu()" to="/dev">Dev</nuxt-link>
+          <!-- <nuxt-link @click="toggleMenu()" to="/dev">Dev</nuxt-link> -->
           <!-- <a class="{{ currentNav === 'music' && 'active' }}" href="./music.html">Music<span>→</span></a> -->
         </nav>
         <nav class="socials">
