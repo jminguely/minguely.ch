@@ -2,7 +2,9 @@
   <div class="site-wrapper" :class="{ menuOpen }">
     <Sidebar :menuOpen="menuOpen" @toggleMenu="toggleMenu" />
     <main class="site-main">
-      <NuxtPage />
+      <div class="site-main-content">
+        <NuxtPage />
+      </div>
     </main>
   </div>
 </template>
@@ -35,6 +37,10 @@ useHead({
 <style lang="postcss">
 html {
   background: #ccc;
+}
+
+body {
+  overscroll-behavior-y: none;
 }
 
 h1 {
@@ -83,14 +89,16 @@ a:hover {
 
 .site-main {
   background: #fff;
-  padding: 20px;
+  padding: 0 10px 0 30px;
   color: #111;
   flex-grow: 1;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
+}
 
-  @screen lg {
-    padding: 30px;
-  }
+.site-main-content {
+  padding-right: 20px;
+  overflow: auto;
+  height: 100%;
 }
 </style>

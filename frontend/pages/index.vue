@@ -1,5 +1,5 @@
 <template>
-  <div v-if="data?.about?.data">
+  <div v-if="data?.about?.data" class="my-10">
     <div
       class="aspect-square sm:aspect-video lg:aspect-cine rounded-lg overflow-hidden bg-gray-900"
     >

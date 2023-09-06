@@ -87,8 +87,8 @@ export default {
   display: block;
   cursor: pointer;
   position: fixed;
-  top: 38px;
-  right: 35px;
+  top: 10px;
+  right: 10px;
   font-size: 3rem;
   line-height: 2.7rem;
   color: black;
@@ -98,7 +98,7 @@ export default {
   width: 60px;
   height: 60px;
   z-index: 999;
-  box-shadow: 0 0 10px #33333388;
+  box-shadow: 0 0 10px #33333333;
 
   .close {
     display: none;

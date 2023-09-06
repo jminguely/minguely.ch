@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-10">
     <ProjectsList category="dev" />
   </div>
 </template>
