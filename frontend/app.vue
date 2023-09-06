@@ -94,6 +94,11 @@ a:hover {
   flex-grow: 1;
   height: 100%;
   overflow: hidden;
+
+  @screen lg {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
 }
 
 .site-main-content {
