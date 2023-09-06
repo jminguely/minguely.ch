@@ -18,7 +18,7 @@
       class="text-xl py-5"
       v-html="data.about.data.attributes.Biography"
     ></div>
-    <div class="grid gap-x-10 grid-cols-[auto_auto] mb-10">
+    <div class="grid gap-x-10 grid-cols-[auto_auto]">
       <template
         v-for="section in data.about.data.attributes.Resume"
         :key="section.id"

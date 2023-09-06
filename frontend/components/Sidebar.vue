@@ -6,8 +6,8 @@
     </button>
     <div class="sidebar">
       <div class="sidebar-content">
-        <h1>Julien Minguely</h1>
-        <p>multimedia and other stuff</p>
+        <h1 class="text-3xl">Julien Minguely</h1>
+        <p class="text-sm">video, music and other stuff in multimedia</p>
         <nav class="main-nav">
           <nuxt-link @click="toggleMenu()" to="/">About</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/video">Video</nuxt-link>
@@ -78,7 +78,7 @@ export default {
     border-bottom: 1px solid #ffffff33;
 
     &.router-link-active {
-      color: #4e6ec3;
+      color: #ffffff;
     }
   }
 }
@@ -87,15 +87,16 @@ export default {
   display: block;
   cursor: pointer;
   position: fixed;
-  top: 15px;
-  left: 10px;
-  font-size: 1.2rem;
-  color: white;
-  background: #4e6ec3;
+  top: 38px;
+  right: 35px;
+  font-size: 3rem;
+  line-height: 2.7rem;
+  color: black;
+  background: #ffffff;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   z-index: 999;
   box-shadow: 0 0 10px #33333388;
 
@@ -103,8 +104,9 @@ export default {
     display: none;
   }
 
-  &:hover {
-    background: #2e4ea3;
+  .open {
+    position: relative;
+    top: -0.3rem;
   }
 
   @screen lg {
@@ -154,7 +156,6 @@ export default {
   padding-right: 60px;
   background: #111;
   padding: 50px;
-  color: #888;
   border-radius: 7px;
   transform: translateX(-110%);
   transition: all 0.3s ease 0.2s;
@@ -169,6 +170,8 @@ export default {
     height: 100%;
     width: auto;
     padding: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 

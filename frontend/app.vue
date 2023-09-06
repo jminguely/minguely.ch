@@ -39,7 +39,7 @@ html {
 
 h1 {
   line-height: 1;
-  color: #4e6ec3;
+  color: #ffffff;
   font-weight: 900;
   font-style: italic;
   margin-top: 0;
@@ -71,12 +71,10 @@ a:hover {
 }
 
 .site-wrapper {
-  @apply flex max-w-7xl;
-  width: calc(100vw - 50px);
-  margin: 10px 10px 20px 40px;
+  @apply flex w-full;
+  margin: 0;
 
   @screen lg {
-    gap: 20px;
     height: calc(100vh - 40px);
     width: calc(100vw - 160px);
     margin: 20px auto;
@@ -84,10 +82,9 @@ a:hover {
 }
 
 .site-main {
-  background: white;
-  border-radius: 7px;
+  background: #fff;
   padding: 20px;
-  color: #888;
+  color: #111;
   flex-grow: 1;
   height: 100%;
   overflow: auto;
