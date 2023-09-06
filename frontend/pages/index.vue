@@ -1,7 +1,7 @@
 <template>
   <div v-if="data?.about?.data">
     <div
-      class="aspect-square sm:aspect-video lg:aspect-cine rounded-lg overflow-hidden bg-gray-900 mb-10"
+      class="aspect-square sm:aspect-video lg:aspect-cine rounded-lg overflow-hidden bg-gray-900"
     >
       <nuxt-img
         class="object-cover w-full h-full opacity-0 filter brightness-0 grayscale-0 transition-all duration-3000"
@@ -23,11 +23,11 @@
         v-for="section in data.about.data.attributes.Resume"
         :key="section.id"
       >
-        <h3 class="col-span-2 text-xl lg:text-2xl mt-20">
+        <h3 class="col-span-2 text-xl lg:text-2xl mt-5">
           {{ section?.Title }}
         </h3>
         <template v-for="item in section.Items" :key="item.id">
-          <p class="col-span-2 lg:col-span-1 font-bold text-gray-300 font-mono">
+          <p class="col-span-2 lg:col-span-1 font-bold text-gray-300">
             {{ item.Title }}
           </p>
           <p class="col-span-2 lg:col-span-1 mb-5">

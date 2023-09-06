@@ -11,7 +11,6 @@
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-28020728.5df24eb",
     "@nuxtjs/apollo": "^5.0.0-alpha.6",
-    "@nuxtjs/google-fonts": "^3.0.0",
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.4.0",
     "postcss": "^8.4.21",
