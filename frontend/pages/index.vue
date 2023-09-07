@@ -1,7 +1,7 @@
 <template>
-  <div v-if="data?.about?.data" class="my-10">
+  <div v-if="data?.about?.data" class="my-5 lg:my-10">
     <div
-      class="aspect-square sm:aspect-video lg:aspect-cine rounded-lg overflow-hidden bg-gray-900"
+      class="aspect-square sm:aspect-video lg:aspect-cine rounded-md overflow-hidden bg-gray-900"
     >
       <nuxt-img
         class="object-cover w-full h-full opacity-0 filter brightness-0 grayscale-0 transition-all duration-3000"

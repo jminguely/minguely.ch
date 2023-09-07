@@ -2,9 +2,7 @@
   <div class="site-wrapper" :class="{ menuOpen }">
     <Sidebar :menuOpen="menuOpen" @toggleMenu="toggleMenu" />
     <main class="site-main">
-      <div class="site-main-content">
-        <NuxtPage />
-      </div>
+      <NuxtPage />
     </main>
   </div>
 </template>
@@ -89,21 +87,15 @@ a:hover {
 
 .site-main {
   background: #fff;
-  padding: 0 10px 0 30px;
+  padding: 0 20px 0 20px;
   color: #111;
   flex-grow: 1;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 
   @screen lg {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
-}
-
-.site-main-content {
-  padding-right: 20px;
-  overflow: auto;
-  height: 100%;
 }
 </style>

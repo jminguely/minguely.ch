@@ -156,7 +156,7 @@ export default {
   padding-right: 60px;
   background: #111;
   padding: 50px;
-  border-radius: 7px;
+  border-radius: 5px;
   transform: translateX(-110%);
   transition: all 0.3s ease 0.2s;
   overflow: auto;
