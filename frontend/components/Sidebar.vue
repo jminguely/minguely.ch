@@ -7,7 +7,7 @@
     <div class="sidebar">
       <div class="sidebar-content">
         <h1 class="text-3xl">Julien Minguely</h1>
-        <p class="text-sm">video, music and other stuff in multimedia</p>
+        <p class="text-sm">video & music & video & music</p>
         <nav class="main-nav">
           <nuxt-link @click="toggleMenu()" to="/">About</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/video">Video</nuxt-link>
