@@ -1,5 +1,5 @@
 query fetchProjects($category: String!) {
-  projects(filters: { Category: { eq: $category } }) {
+  projects(filters: { Category: { eq: "video" } }, sort: "publishedAt:DESC") {
     data {
       id
       attributes {
