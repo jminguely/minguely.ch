@@ -86,7 +86,7 @@ a:hover {
 }
 
 .site-main {
-  background: #f00;
+  background: #fff;
   padding: 0 20px 0 20px;
   color: #111;
   flex-grow: 1;
