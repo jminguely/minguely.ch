@@ -1,8 +1,6 @@
 <template>
-  <div v-if="data?.about?.data" class="my-5 lg:my-10">
-    <div
-      class="aspect-square sm:aspect-video lg:aspect-cine rounded-md overflow-hidden bg-gray-900"
-    >
+  <div v-if="data?.about?.data">
+    <div class="aspect-video lg:aspect-cine overflow-hidden bg-gray-900">
       <nuxt-img
         class="object-cover w-full h-full opacity-0 filter brightness-0 grayscale-0 transition-all duration-3000"
         :class="{ 'opacity-100 grayscale brightness-100': imageLoaded }"
@@ -15,10 +13,12 @@
       />
     </div>
     <div
-      class="text-xl py-5"
+      class="text-sm py-5 mt-5 mx-10 max-w-2xl md:text-justify"
       v-html="data.about.data.attributes.Biography"
     ></div>
-    <div class="grid gap-x-10 grid-cols-[auto_auto]">
+    <div
+      class="text-sm grid gap-x-10 grid-cols-[auto_auto] mx-10 mb-3 max-w-2xl"
+    >
       <template
         v-for="section in data.about.data.attributes.Resume"
         :key="section.id"

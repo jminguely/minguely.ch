@@ -47,7 +47,7 @@ export default {
 
 <style scoped lang="postcss">
 .project-card {
-  @apply aspect-square md:aspect-video lg:aspect-cine;
+  @apply aspect-video lg:aspect-cine;
   position: relative;
   display: block;
   text-decoration: none;
@@ -55,10 +55,9 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 15px;
-  border-radius: 5px;
   overflow: hidden;
   box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
   &:last-of-type {
     margin-bottom: 0px;
@@ -94,7 +93,7 @@ export default {
     transition: all 1s ease;
 
     @screen md {
-      padding: 2rem 6rem 2rem 2rem;
+      padding: 2rem 6rem 1.5rem 2rem;
     }
   }
 
@@ -146,7 +145,10 @@ export default {
     z-index: 0;
     object-fit: cover;
     transform: scale(1) rotate(0deg);
-    transition: transform 2s, opacity 2s, filter 2s;
+    transition:
+      transform 2s,
+      opacity 2s,
+      filter 2s;
     opacity: 0;
     filter: grayscale(1);
 

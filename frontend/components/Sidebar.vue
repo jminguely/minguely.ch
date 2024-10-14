@@ -89,14 +89,13 @@ export default {
   position: fixed;
   top: 10px;
   right: 10px;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 2.7rem;
   color: black;
   background: #ffffff;
   border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   z-index: 999;
   box-shadow: 0 0 10px #33333333;
 
@@ -126,7 +125,6 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
   height: 100%;
   box-sizing: border-box;
   z-index: 500;
@@ -150,13 +148,13 @@ export default {
 
 .sidebar-content {
   display: flex;
+  color: #ffffff;
   flex-direction: column;
   height: 100%;
   width: calc(100vw - 40px);
   padding-right: 60px;
   background: #111;
   padding: 50px;
-  border-radius: 5px;
   transform: translateX(-110%);
   transition: all 0.3s ease 0.2s;
   overflow: auto;
@@ -170,8 +168,6 @@ export default {
     height: 100%;
     width: auto;
     padding: 30px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 }
 

@@ -1,7 +1,5 @@
 <template>
-  <div class="my-5 lg:my-10">
-    <ProjectsList category="video" />
-  </div>
+  <ProjectsList category="video" />
 </template>
 
 <script setup>

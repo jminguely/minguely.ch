@@ -76,26 +76,14 @@ a:hover {
 
 .site-wrapper {
   @apply flex w-full;
-  margin: 0;
-
-  @screen lg {
-    height: calc(100vh - 40px);
-    width: calc(100vw - 160px);
-    margin: 20px auto;
-  }
+  height: 100vh;
 }
 
 .site-main {
   background: #fff;
-  padding: 0 20px 0 20px;
   color: #111;
   flex-grow: 1;
   height: 100%;
   overflow: auto;
-
-  @screen lg {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
 }
 </style>
