@@ -1,0 +1,843 @@
+[
+  {
+    "title": "Marlin",
+    "date": "24.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Matters Unknown",
+    "date": "24.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Dan & the Dynamite",
+    "date": "25.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "freekind",
+    "date": "25.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Mel D",
+    "date": "26.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Reinel Bakole",
+    "date": "26.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "L'Osmose",
+    "date": "27.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Pipya and the Gang Band",
+    "date": "27.10.24",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Trombone Shorty",
+    "date": "05.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jon Batiste",
+    "date": "05.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "James Arthur",
+    "date": "06.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Zucchero",
+    "date": "06.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Editors",
+    "date": "07.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "The Smashing Pumpkins",
+    "date": "07.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Alice Cooper",
+    "date": "08.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Deep Purple",
+    "date": "08.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "PJ Harvey",
+    "date": "09.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "The National",
+    "date": "09.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jessie Ware",
+    "date": "10.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Paolo Nutini",
+    "date": "10.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Róisín Murphy",
+    "date": "11.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Barry Can’t Swim",
+    "date": "12.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Justice",
+    "date": "12.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Diana Krall",
+    "date": "13.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jamie Cullum",
+    "date": "13.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Marc Rebillet",
+    "date": "14.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Vulfpeck",
+    "date": "14.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Air",
+    "date": "15.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Massive Attack",
+    "date": "15.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Larkin Poe",
+    "date": "16.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Rag’n’Bone Man",
+    "date": "17.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Raye",
+    "date": "18.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Janelle Monáe",
+    "date": "18.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Michael Kiwanuka",
+    "date": "19.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jungle",
+    "date": "19.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Soft Cell",
+    "date": "20.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Duran Duran",
+    "date": "20.07.24",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Tony Ann",
+    "date": "09.02.24",
+    "location": "MJF Spotlight Sessions"
+  },
+  {
+    "title": "Marguerite Thiam",
+    "date": "10.02.24",
+    "location": "MJF Spotlight Sessions"
+  },
+  {
+    "title": "Yamê",
+    "date": "16.02.24",
+    "location": "MJF Spotlight Sessions"
+  },
+  {
+    "title": "María José Llergo",
+    "date": "17.02.24",
+    "location": "MJF Spotlight Sessions"
+  },
+  {
+    "title": "Holly Macve",
+    "date": "01.03.24",
+    "location": "MJF Spotlight Sessions"
+  },
+  {
+    "title": "Victor Ray",
+    "date": "02.03.24",
+    "location": "MJF Spotlight Sessions"
+  },
+  {
+    "title": "Tom Odell",
+    "date": "30.06.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Simply Red",
+    "date": "30.06.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Bastian Baker",
+    "date": "02.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Chris Isaak",
+    "date": "02.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Nnavy",
+    "date": "03.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Romy",
+    "date": "04.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Lil Nas X",
+    "date": "04.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Sam Smith",
+    "date": "05.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Pip Millet",
+    "date": "05.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Generation Sex",
+    "date": "06.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+
+  {
+    "title": "Iggy Pop",
+    "date": "06.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Roberta Sa",
+    "date": "07.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Gilberto Gil & Family",
+    "date": "07.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Chilly Gonzales",
+    "date": "08.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Sofiane Pamart",
+    "date": "08.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jacob Collier",
+    "date": "09.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jon Batiste",
+    "date": "09.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Norah Jones",
+    "date": "10.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Mavis Staples",
+    "date": "10.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Emilia",
+    "date": "11.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Maluma",
+    "date": "11.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Morcheeba",
+    "date": "12.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Seal",
+    "date": "12.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Pat Metheny",
+    "date": "13.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Marcus Miller",
+    "date": "13.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Buddy Guy",
+    "date": "14.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Joe Bonamassa",
+    "date": "14.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Janelle Monae",
+    "date": "15.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Nile Rodgers & Chic",
+    "date": "15.07.23",
+    "location": "Montreux Jazz Festival"
+  },
+
+  {
+    "title": "Mira Lora",
+    "date": "04.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Sheila Maurice-Grey",
+    "date": "04.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "muralim",
+    "date": "05.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Maya Delilah",
+    "date": "05.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Nayana",
+    "date": "06.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Jasmine Myra",
+    "date": "06.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Obliecht",
+    "date": "07.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "title": "Yoni Mayraz",
+    "date": "07.10.23",
+    "location": "Montreux Jazz Residency"
+  },
+  {
+    "date": "01.07.22",
+    "title": "Dino Brandao",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "01.07.22",
+    "title": "Sophie Hunger",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "01.07.22",
+    "title": "Faber",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "02.07.22",
+    "title": "Pierre de Maere",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "02.07.22",
+    "title": "Iliona",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "02.07.22",
+    "title": "Years & Years",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "03.07.22",
+    "title": "November Ultra",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "03.07.22",
+    "title": "Tom Rosenthal",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "04.07.22",
+    "title": "Anitta",
+    "location": "Montreux Jazz Festival"
+  },
+
+  {
+    "date": "04.07.22",
+    "title": "Mimi Webb",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "05.07.22",
+    "title": "Self Esteem",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "05.07.22",
+    "title": "Mitski",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "06.07.22",
+    "title": "Joel Culpepper",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "06.07.22",
+    "title": "Black Pumas",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "06.07.22",
+    "title": "Michael Kiwanuka",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "07.07.22",
+    "title": "Lady Blackbird",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "07.07.22",
+    "title": "Nubya Garcia",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "07.07.22",
+    "title": "Marc Rebillet",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "08.07.22",
+    "title": "Luidji",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "08.07.22",
+    "title": "Laylow",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "09.07.22",
+    "title": "Tinashe",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "09.07.22",
+    "title": "Odezenne",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "09.07.22",
+    "title": "Fred Again",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "10.07.22",
+    "title": "Lous and the Yakuza",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "10.07.22",
+    "title": "Woodkid",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "11.07.22",
+    "title": "John McLaughlin",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "11.07.22",
+    "title": "Magma",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "12.07.22",
+    "title": "Robert Stillman",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "12.07.22",
+    "title": "The Smile",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "13.07.22",
+    "title": "La Fève",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "13.07.22",
+    "title": "Guy2Bezbar",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "13.07.22",
+    "title": "Lala &ce",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "13.07.22",
+    "title": "Ziak",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "13.07.22",
+    "title": "Oboy",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "14.07.22",
+    "title": "Goldlink",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "14.07.22",
+    "title": "Nicki Nicole",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "14.07.22",
+    "title": "Rejjie Snow",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "15.07.22",
+    "title": "Yussef Dayes",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "15.07.22",
+    "title": "Parcels",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "16.07.22",
+    "title": "Arlo Parks",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "16.07.22",
+    "title": "Patrick Watson",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "16.07.22",
+    "title": "Phoebe Bridgers",
+    "location": "Montreux Jazz Festival"
+  },
+
+  {
+    "date": "28.03.22",
+    "title": "November Ultra",
+    "location": "MJF Spotlight Sessions, Zürich"
+  },
+  {
+    "date": "28.03.22",
+    "title": "Pierre de Maere",
+    "location": "MJF Spotlight Sessions, Zürich"
+  },
+
+  {
+    "date": "27.04.22",
+    "title": "Sam Ryder",
+    "location": "MJF Spotlight Sessions, London"
+  },
+  {
+    "date": "27.04.22",
+    "title": "Kings Elliot",
+    "location": "MJF Spotlight Sessions, London"
+  },
+  {
+    "date": "27.04.22",
+    "title": "Berwyn",
+    "location": "MJF Spotlight Sessions, London"
+  },
+  {
+    "date": "31.05.22",
+    "title": "Becks",
+    "location": "MJF Spotlight Sessions, Hamburg"
+  },
+  {
+    "date": "31.05.22",
+    "title": "Bow Anderson",
+    "location": "MJF Spotlight Sessions, Hamburg"
+  },
+
+  {
+    "date": "23.11.22",
+    "title": "Auk Nova",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "23.11.22",
+    "title": "Nola Kin",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "24.11.22",
+    "title": "Anatole Muster",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "24.11.22",
+    "title": "Andrina Bollinger",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "25.11.22",
+    "title": "Pilar Vega",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "25.11.22",
+    "title": "Nuit Incolore",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "26.11.22",
+    "title": "Montreux Jazz Academy Concert",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "27.10.21",
+    "title": "Evita Koné",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "27.10.21",
+    "title": "Chelan",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "28.10.21",
+    "title": "ELÆNA",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "28.10.21",
+    "title": "mischgewebe",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "29.10.21",
+    "title": "Roxane",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "29.10.21",
+    "title": "Woodgies",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "30.10.21",
+    "title": "Montreux Jazz Academy Concert",
+    "location": "MJF Autumn of Music"
+  },
+  {
+    "date": "02.07.21",
+    "title": "Annie Taylor",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "03.07.21",
+    "title": "Woodkid",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "04.07.21",
+    "title": "Hermanos Gutiérrez",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "04.07.21",
+    "title": "Delgres",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "05.07.21",
+    "title": "Ibrahim Maalouf",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "06.07.21",
+    "title": "Oscar Anton",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "06.07.21",
+    "title": "Yseult",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "07.07.21",
+    "title": "Oklou",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "07.07.21",
+    "title": "Sofiane Pamart",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "08.07.21",
+    "title": "Priya Ragu",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "08.07.21",
+    "title": "Nathy Peluso",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "09.07.21",
+    "title": "Brandão Faber Hunger",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "10.07.21",
+    "title": "Dotan",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "10.07.21",
+    "title": "Sam Fischer",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "12.07.21",
+    "title": "Zucchero",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "14.07.21",
+    "title": "Yet No Yokai",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "14.07.21",
+    "title": "Altin Gün",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "15.07.21",
+    "title": "Arma Jackson",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "15.07.21",
+    "title": "Arlo Parks",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "16.07.21",
+    "title": "Lass",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "16.07.21",
+    "title": "Fatoumata Diawara",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "17.07.21",
+    "title": "S+C+A+R+R",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "17.07.21",
+    "title": "Kid Francescoli",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "date": "03.07.19",
+    "title": "Jordan Rakei",
+    "location": "Montreux Jazz Festival"
+  }
+]
