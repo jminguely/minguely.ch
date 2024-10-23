@@ -6,19 +6,17 @@
         <tr>
           <th
             scope="col"
-            class="py-2 text-left text-xs font-bold uppercase tracking-wider"
+            colspan="2"
+            class="py-2 text-left text-xs font-bold uppercase"
           >
             Full credit list
           </th>
-          <th
-            scope="col"
-            class="py-2 text-left text-xs font-bold uppercase tracking-wider"
-          >
+          <th scope="col" class="py-2 text-left text-xs font-bold uppercase">
             Date
           </th>
           <th
             scope="col"
-            class="py-2 text-left text-xs font-bold uppercase tracking-wider"
+            class="py-2 text-left text-xs font-bold uppercase hidden md:block"
           >
             Location
           </th>
@@ -26,13 +24,20 @@
       </thead>
       <tbody class="divide-y divide-gray-200">
         <tr v-for="(credit, index) in sortedCredits" :key="index">
-          <td class="py-2 whitespace-nowrap text-sm text-gray-900">
+          <td class="py-2 whitespace-nowrap text-xs text-gray-300 font-bold">
+            #<span class="tabular-nums">{{
+              (sortedCredits.length - index).toString().padStart(3, "0")
+            }}</span>
+          </td>
+          <td class="py-2 whitespace-nowrap text-xs text-gray-900">
             {{ credit.title }}
           </td>
-          <td class="py-2 whitespace-nowrap text-sm text-gray-900">
+          <td class="py-2 whitespace-nowrap text-xs text-gray-900 tabular-nums">
             {{ credit.date }}
           </td>
-          <td class="py-2 whitespace-nowrap text-sm text-gray-900">
+          <td
+            class="py-2 whitespace-nowrap text-xs text-gray-900 hidden md:block"
+          >
             {{ credit.location }}
           </td>
         </tr>
