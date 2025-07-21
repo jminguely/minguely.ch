@@ -36,6 +36,7 @@
         </template>
       </template>
     </div>
+    <FullCreditList />
   </div>
 </template>
 
