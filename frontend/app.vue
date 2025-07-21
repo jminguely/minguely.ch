@@ -45,7 +45,6 @@ h1 {
   line-height: 1;
   color: #ffffff;
   font-weight: 900;
-  font-style: italic;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -53,7 +52,6 @@ h1 {
 h2,
 h3 {
   font-weight: 900;
-  font-style: italic;
   line-height: 0.85;
 }
 
