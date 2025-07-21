@@ -1,5 +1,135 @@
 [
   {
+    "title": "Chaka Khan",
+    "date": "04.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "J Balvin",
+    "date": "05.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Trueno",
+    "date": "05.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Neil Young",
+    "date": "06.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Noah Kahan",
+    "date": "07.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Royel Otis",
+    "date": "07.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "London Grammar",
+    "date": "08.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Rufus Du Sol",
+    "date": "08.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jade",
+    "date": "09.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Raye",
+    "date": "09.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Celeste",
+    "date": "10.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Diana Ross",
+    "date": "11.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Grace Jones",
+    "date": "12.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Yseult",
+    "date": "12.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "FKA twigs",
+    "date": "13.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Jamie xx",
+    "date": "13.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Bloc Party",
+    "date": "14.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Pulp",
+    "date": "14.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Benson Boone",
+    "date": "15.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Mark Ambor",
+    "date": "15.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Joe Bonamassa",
+    "date": "16.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "The Kenny Wayne Shepherd Band",
+    "date": "16.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Hermanos Gutiérrez",
+    "date": "17.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "The Black Keys",
+    "date": "17.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Sigrid",
+    "date": "19.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
+    "title": "Alanis Morissette",
+    "date": "19.07.25",
+    "location": "Montreux Jazz Festival"
+  },
+  {
     "title": "Cinq",
     "date": "30.05.24",
     "location": "Bad Bonn Kilbi"
