@@ -2,7 +2,7 @@
   <a
     :href="project.attributes.external_url"
     target="_blank"
-    class="project-card bg-gray-900"
+    :class="['project-card bg-gray-900', { compact }]"
   >
     <div class="content">
       <div class="headings">
@@ -40,6 +40,10 @@ export default {
     project: {
       type: Object,
       default: () => {},
+    },
+    compact: {
+      type: Boolean,
+      default: false,
     },
   },
 };
@@ -114,6 +118,14 @@ export default {
 
     @screen md {
       font-size: 2rem;
+    }
+  }
+
+  &.compact .title {
+    font-size: 1rem;
+
+    @screen md {
+      font-size: 1.25rem;
     }
   }
 

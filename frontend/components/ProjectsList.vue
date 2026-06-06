@@ -1,10 +1,20 @@
 <template>
-  <div class="card-container" v-if="data?.projects">
-    <ProjectCard
-      v-for="project in sortedProjects"
-      :key="project.id"
-      :project="project"
-    />
+  <div v-if="data?.projects">
+    <div class="card-container">
+      <ProjectCard
+        v-for="project in primaryProjects"
+        :key="project.id"
+        :project="project"
+      />
+    </div>
+    <div v-if="secondaryProjects.length" class="card-container-grid">
+      <ProjectCard
+        v-for="project in secondaryProjects"
+        :key="project.id"
+        :project="project"
+        compact
+      />
+    </div>
   </div>
 </template>
 
@@ -25,6 +35,21 @@ const sortedProjects = computed(() => {
     return (b.attributes.highlight ? 1 : 0) - (a.attributes.highlight ? 1 : 0);
   });
 });
+
+const primaryProjects = computed(() => sortedProjects.value.slice(0, 10));
+const secondaryProjects = computed(() => {
+  const items = sortedProjects.value.slice(10);
+  return items.length % 2 !== 0 ? items.slice(0, -1) : items;
+});
 </script>
 
-<style scoped lang="postcss"></style>
+<style scoped lang="postcss">
+.card-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .project-card:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+</style>
