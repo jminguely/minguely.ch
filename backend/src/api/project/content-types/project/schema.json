@@ -33,6 +33,10 @@
     "Category": {
       "type": "enumeration",
       "enum": ["video", "music", "dev"]
+    },
+    "highlight": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

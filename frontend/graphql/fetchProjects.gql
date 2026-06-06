@@ -8,6 +8,7 @@ query fetchProjects($category: String!) {
         subtitle
         description
         external_url
+        highlight
         cover {
           data {
             id
