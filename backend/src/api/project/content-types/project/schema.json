@@ -37,9 +37,6 @@
     "highlight": {
       "type": "boolean",
       "default": false
-    },
-    "order": {
-      "type": "integer"
     }
   }
 }

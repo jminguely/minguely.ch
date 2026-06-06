@@ -32,9 +32,7 @@ const { data } = await useAsyncQuery(fetchProjects, variables);
 const sortedProjects = computed(() => {
   if (!data.value?.projects?.data) return [];
   return [...data.value.projects.data].sort((a, b) => {
-    const aOrder = a.attributes.order ?? Infinity;
-    const bOrder = b.attributes.order ?? Infinity;
-    return aOrder - bOrder;
+    return (b.attributes.highlight ? 1 : 0) - (a.attributes.highlight ? 1 : 0);
   });
 });
 

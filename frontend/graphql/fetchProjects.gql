@@ -13,7 +13,6 @@ query fetchProjects($category: String!) {
         description
         external_url
         highlight
-        order
         cover {
           data {
             id
