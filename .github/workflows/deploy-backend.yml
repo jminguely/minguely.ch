@@ -37,7 +37,7 @@ jobs:
           DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
         with:
           flags: "-a"
-          options: ""
+          options: "--exclude=node_modules --exclude=.git --exclude=.cache"
           ssh_options: ""
           src: "./backend"
           dest: ${{vars.DEPLOY_DEST}}
