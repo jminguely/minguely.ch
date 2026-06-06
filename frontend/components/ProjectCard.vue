@@ -1,7 +1,11 @@
 <template>
-  <a
-    :href="project.attributes.external_url"
-    target="_blank"
+  <component
+    :is="project.attributes.external_url ? 'a' : 'div'"
+    v-bind="
+      project.attributes.external_url
+        ? { href: project.attributes.external_url, target: '_blank' }
+        : {}
+    "
     :class="['project-card bg-gray-900', { compact }]"
   >
     <div class="content">
@@ -13,7 +17,7 @@
         <p class="credits">{{ project.attributes.description }}</p>
       </div>
     </div>
-    <div class="button">
+    <div v-if="project.attributes.external_url" class="button">
       <p>→</p>
     </div>
     <nuxt-img
@@ -26,7 +30,7 @@
       placeholder
       @load="loaded = true"
     />
-  </a>
+  </component>
 </template>
 
 <script>
