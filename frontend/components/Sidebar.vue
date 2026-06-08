@@ -6,7 +6,7 @@
     </button>
     <div class="sidebar">
       <div class="sidebar-content">
-        <h1 class="text-3xl">Julien Minguely</h1>
+        <h1 class="text-3xl mb-0 pb-0">Julien Minguely</h1>
         <p class="text-sm">Broadcast director & musician</p>
         <nav class="main-nav">
           <nuxt-link @click="toggleMenu()" to="/">About</nuxt-link>
@@ -15,7 +15,12 @@
           <!-- <nuxt-link @click="toggleMenu()" to="/dev">Dev</nuxt-link> -->
           <!-- <a class="{{ currentNav === 'music' && 'active' }}" href="./music.html">Music<span>→</span></a> -->
         </nav>
-        <nav class="socials">
+        <nav class="mt-auto flex flex-col">
+          <p>
+            —<br />
+            Julien Minguely
+          </p>
+
           <a
             target="_blank"
             rel="noreferrer"
@@ -29,13 +34,6 @@
             href="https://vimeo.com/jminguely"
           >
             Vimeo
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/jminguely"
-          >
-            Github
           </a>
           <a target="_blank" rel="noreferrer" href="mailto:julien@minguely.ch">
             Mail
@@ -69,7 +67,7 @@ export default {
 
   a {
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0 0 0.5rem 0;
     padding: 0.5rem 0.1rem;
     text-decoration: none;
@@ -183,11 +181,5 @@ export default {
   .sidebar-content {
     transform: translateX(0);
   }
-}
-
-.socials {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
 }
 </style>

@@ -8,7 +8,7 @@
 - **GraphQL Client**: `@nuxtjs/apollo` (`^5.0.0-alpha.6`) + `@apollo/client` (`^3.7.12`)
 - **CSS**: Tailwind CSS (`^3.3.1`) + PostCSS (`^8.4.21`) + Autoprefixer (`^10.4.14`) + Tailwind nesting
 - **Image Optimization**: `@nuxt/image-edge` (`^1.0.0-...`) with Strapi provider
-- **Font**: `proxima-nova` via Adobe Typekit
+- **Font**: `geomanist` self hosted font
 - **Process Manager**: PM2 (via `ecosystem.config.js`)
 - **Package Manager**: Yarn (shamefully-hoist, `strict-peer-dependencies=false`)
 - **Node Target**: 16 (CI)
@@ -48,7 +48,7 @@
 ├── frontend/                   # Nuxt 3 SSR app
 │   ├── app.vue                 # Root layout: sidebar + NuxtPage
 │   ├── assets/
-│   │   ├── css/main.css        # Tailwind imports + Typekit
+│   │   ├── css/main.css        # Tailwind imports
 │   │   └── data/credit.json    # Static credit list (local JSON, not from CMS)
 │   ├── components/
 │   │   ├── Sidebar.vue         # Navigation + socials
@@ -99,7 +99,7 @@ Browser → Nuxt 3 (SSR/SSG) → Apollo Client (GraphQL) → Strapi 4 API (api.m
 
 - **Scoped + global**: Components use `<style scoped lang="postcss">` or unscoped `<style lang="postcss">`
 - **Tailwind usage**: Mix of utility classes in templates + `@apply` in `<style>` blocks + `@screen` directive for responsive breakpoints
-- **Custom theme extensions**: `aspect-cine` (2.35:1), `duration-3000` (3s transition), `font-sans` → proxima-nova
+- **Custom theme extensions**: `aspect-cine` (2.35:1), `duration-3000` (3s transition), `font-sans` → geomanist
 
 ### State Management
 

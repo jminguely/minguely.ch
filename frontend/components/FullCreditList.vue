@@ -3,19 +3,13 @@
     <table class="min-w-full divide-y divide-gray-200">
       <thead>
         <tr>
-          <th
-            scope="col"
-            colspan="2"
-            class="py-2 text-left text-xs font-bold uppercase"
-          >
+          <th scope="col" colspan="2" class="py-2 text-left text-xs uppercase">
             Full credit list
           </th>
-          <th scope="col" class="py-2 text-left text-xs font-bold uppercase">
-            Date
-          </th>
+          <th scope="col" class="py-2 text-left text-xs uppercase">Date</th>
           <th
             scope="col"
-            class="py-2 text-left text-xs font-bold uppercase hidden md:block"
+            class="py-2 text-left text-xs uppercase hidden md:block"
           >
             Location
           </th>
@@ -23,7 +17,7 @@
       </thead>
       <tbody class="divide-y divide-gray-200">
         <tr v-for="(credit, index) in sortedCredits" :key="index">
-          <td class="py-2 whitespace-nowrap text-xs text-gray-300 font-bold">
+          <td class="py-2 whitespace-nowrap text-xs text-gray-300">
             #<span class="tabular-nums">{{
               (sortedCredits.length - index).toString().padStart(3, "0")
             }}</span>

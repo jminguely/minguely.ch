@@ -27,7 +27,7 @@
           {{ section?.Title }}
         </h3>
         <template v-for="item in section.Items" :key="item.id">
-          <p class="col-span-2 lg:col-span-1 font-bold text-gray-300">
+          <p class="col-span-2 lg:col-span-1 text-gray-300">
             {{ item.Title }}
           </p>
           <p class="col-span-2 lg:col-span-1 mb-5">

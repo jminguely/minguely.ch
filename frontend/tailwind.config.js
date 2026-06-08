@@ -17,7 +17,7 @@ module.exports = {
         3000: "3000ms",
       },
       fontFamily: {
-        sans: ["proxima-nova", "sans-serif"],
+        sans: ["geomanist", "sans-serif"],
       },
     },
   },

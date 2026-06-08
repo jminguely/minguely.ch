@@ -44,14 +44,14 @@ body {
 h1 {
   line-height: 1;
   color: #ffffff;
-  font-weight: 900;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 h2,
 h3 {
-  font-weight: 900;
+  font-weight: 400;
   line-height: 0.85;
 }
 
