@@ -1,7 +1,7 @@
 <template>
   <div class="site-wrapper" :class="{ menuOpen }">
     <Sidebar :menuOpen="menuOpen" @toggleMenu="toggleMenu" />
-    <main class="site-main">
+    <main ref="siteMain" class="site-main">
       <NuxtPage />
     </main>
   </div>
@@ -9,10 +9,16 @@
 
 <script setup>
 const menuOpen = ref(false);
+const siteMain = ref(null);
 
 function toggleMenu() {
   menuOpen.value = !menuOpen.value;
 }
+
+const router = useRouter();
+router.afterEach(() => {
+  if (siteMain.value) siteMain.value.scrollTop = 0;
+});
 
 useHead({
   titleTemplate: (title) => `minguely.ch - ${title}`,
