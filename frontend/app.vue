@@ -17,7 +17,7 @@ function toggleMenu() {
 
 const router = useRouter();
 router.afterEach(() => {
-  if (siteMain.value) siteMain.value.scrollTop = 0;
+  if (siteMain.value) siteMain.value.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 useHead({
