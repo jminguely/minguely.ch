@@ -40,52 +40,46 @@ useHead({
 
 <style lang="postcss">
 html {
-  background: #ccc;
+  background: #ffffff;
 }
 
 body {
   overscroll-behavior-y: none;
 }
 
-h1 {
-  line-height: 1;
-  color: #ffffff;
-  font-weight: 400;
+h1, h2, h3, h4, h5, h6 {
+  line-height: 0.85;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 0.5rem;
-}
-
-h2,
-h3 {
-  font-weight: 400;
-  line-height: 0.85;
-}
-
-h3 {
-  line-height: 0.85;
-  margin-bottom: 0.4rem;
+  text-transform: uppercase;
 }
 
 a {
-  color: #ccc;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 a:hover {
-  color: #ffffff;
+  opacity: 0.6;
 }
 
 ::selection {
-  background-color: #ffffff22;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .site-wrapper {
   @apply flex w-full;
   height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 .site-main {
-  background: #fff;
-  color: #111;
+  background: #ffffff;
+  color: #000000;
   flex-grow: 1;
   height: 100%;
   overflow: auto;

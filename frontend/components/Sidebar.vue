@@ -6,17 +6,16 @@
     </button>
     <div class="sidebar">
       <div class="sidebar-content">
-        <h1 class="text-3xl mb-0 pb-0">Julien Minguely</h1>
-        <p class="text-sm">Broadcast director & musician</p>
+        <h1 class="text-3xl mb-0 pb-0 tracking-tighter leading-none">J.Minguely</h1>
+        <p class="text-sm uppercase tracking-wider mb-8">Broadcast director</p>
         <nav class="main-nav">
           <nuxt-link @click="toggleMenu()" to="/">About</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/video">Video</nuxt-link>
+          <nuxt-link @click="toggleMenu()" to="/videoclips">Vidéoclips</nuxt-link>
           <nuxt-link @click="toggleMenu()" to="/music">Music</nuxt-link>
-          <!-- <nuxt-link @click="toggleMenu()" to="/dev">Dev</nuxt-link> -->
-          <!-- <a class="{{ currentNav === 'music' && 'active' }}" href="./music.html">Music<span>→</span></a> -->
         </nav>
-        <nav class="mt-auto flex flex-col">
-          <p>
+        <nav class="mt-auto flex flex-col space-y-2 pt-8">
+          <p class="text-xs uppercase tracking-widest text-black/55 mb-4">
             —<br />
             Julien Minguely
           </p>
@@ -25,6 +24,7 @@
             target="_blank"
             rel="noreferrer"
             href="https://instagram.com/jminguely"
+            class="text-sm uppercase hover:underline"
           >
             Instagram
           </a>
@@ -32,10 +32,11 @@
             target="_blank"
             rel="noreferrer"
             href="https://vimeo.com/jminguely"
+            class="text-sm uppercase hover:underline"
           >
             Vimeo
           </a>
-          <a target="_blank" rel="noreferrer" href="mailto:julien@minguely.ch">
+          <a target="_blank" rel="noreferrer" href="mailto:julien@minguely.ch" class="text-sm uppercase hover:underline">
             Mail
           </a>
         </nav>
@@ -63,20 +64,34 @@ export default {
 <style lang="postcss">
 .main-nav {
   margin-top: 1rem;
-  border-top: 1px solid #ffffff33;
+  border-top: 1px solid #000000;
 
   a {
-    font-size: 1.75rem;
-    font-weight: 400;
-    margin: 0 0 0.5rem 0;
-    padding: 0.5rem 0.1rem;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.75rem 0;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ffffff33;
+    border-bottom: 1px solid #000000;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
 
     &.router-link-active {
+      color: #000000;
+      position: relative;
+    }
+
+    &.router-link-active::after {
+      content: "→";
+      display: inline-block;
+    }
+
+    &:hover {
+      background-color: #000000;
       color: #ffffff;
+      padding-left: 0.5rem;
+      opacity: 1;
     }
   }
 }
@@ -85,17 +100,19 @@ export default {
   display: block;
   cursor: pointer;
   position: fixed;
-  top: 10px;
-  right: 10px;
-  font-size: 2.8rem;
-  line-height: 2.7rem;
-  color: black;
+  top: 15px;
+  right: 15px;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  color: #000000;
   background: #ffffff;
-  border: none;
-  width: 40px;
-  height: 40px;
+  border: 1px solid #000000;
+  width: 45px;
+  height: 45px;
   z-index: 999;
-  box-shadow: 0 0 10px #33333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .close {
     display: none;
@@ -103,7 +120,7 @@ export default {
 
   .open {
     position: relative;
-    top: -0.3rem;
+    top: -0.1rem;
   }
 
   @screen lg {
@@ -127,45 +144,43 @@ export default {
   box-sizing: border-box;
   z-index: 500;
   transition: all 0.3s ease;
-  background: #99999999;
+  background: rgba(255, 255, 255, 0.95);
   pointer-events: none;
   opacity: 0;
-  backdrop-filter: blur(10px);
 
   @screen lg {
     position: static;
-    min-width: 320px;
+    min-width: 300px;
+    width: 300px;
     left: auto;
     opacity: 1;
     padding: 0;
-    backdrop-filter: none;
     background: none;
     pointer-events: auto;
+    border-right: 1px solid #000000;
   }
 }
 
 .sidebar-content {
   display: flex;
-  color: #ffffff;
+  color: #000000;
   flex-direction: column;
   height: 100%;
-  width: calc(100vw - 40px);
-  padding-right: 60px;
-  background: #111;
-  padding: 50px;
-  transform: translateX(-110%);
-  transition: all 0.3s ease 0.2s;
+  width: 100%;
+  background: #ffffff;
+  padding: 40px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
   overflow: auto;
 
   @screen lg {
     transform: none;
-    color: white;
     display: flex;
     flex-direction: column;
     margin: 0;
     height: 100%;
     width: auto;
-    padding: 30px;
+    padding: 40px 30px;
   }
 }
 
@@ -175,7 +190,6 @@ export default {
   .sidebar {
     opacity: 1;
     pointer-events: auto;
-    transition: all 0.5s ease;
   }
 
   .sidebar-content {
