@@ -3,15 +3,8 @@
     <table class="min-w-full divide-y divide-gray-200">
       <thead>
         <tr>
-          <th scope="col" colspan="2" class="py-2 text-left text-xs uppercase">
+          <th scope="col" colspan="2" class="py-2 text-left text-xs uppercase font-normal">
             Full credit list
-          </th>
-          <th scope="col" class="py-2 text-left text-xs uppercase">Date</th>
-          <th
-            scope="col"
-            class="py-2 text-left text-xs uppercase hidden md:block"
-          >
-            Location
           </th>
         </tr>
       </thead>
@@ -25,11 +18,11 @@
           <td class="py-2 whitespace-nowrap text-xs text-gray-900">
             {{ credit.title }}
           </td>
-          <td class="py-2 whitespace-nowrap text-xs text-gray-900 tabular-nums">
+          <td class="py-2 whitespace-nowrap text-xs text-gray-300 tabular-nums">
             {{ credit.date }}
           </td>
           <td
-            class="py-2 whitespace-nowrap text-xs text-gray-900 hidden md:block"
+            class="py-2 whitespace-nowrap text-xs text-gray-300 hidden md:block"
           >
             {{ credit.location }}
           </td>
