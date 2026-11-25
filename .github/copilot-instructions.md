@@ -40,6 +40,7 @@
 │   ├── src/
 │   │   ├── api/
 │   │   │   ├── about/          # Single type: About (bio, resume, cover)
+│   │   │   ├── credit/         # Collection type: Credit (title, date, location)
 │   │   │   └── project/        # Collection type: Project (video/music/dev)
 │   │   ├── components/
 │   │   │   └── about/          # Strapi components: Resume, Items
@@ -48,15 +49,15 @@
 ├── frontend/                   # Nuxt 3 SSR app
 │   ├── app.vue                 # Root layout: sidebar + NuxtPage
 │   ├── assets/
-│   │   ├── css/main.css        # Tailwind imports
-│   │   └── data/credit.json    # Static credit list (local JSON, not from CMS)
+│   │   └── css/main.css        # Tailwind imports
 │   ├── components/
 │   │   ├── Sidebar.vue         # Navigation + socials
 │   │   ├── ProjectsList.vue    # Fetches projects by category via GraphQL
 │   │   ├── ProjectCard.vue     # Single project display card
-│   │   └── FullCreditList.vue  # Sorted table from credit.json
+│   │   └── FullCreditList.vue  # Sorted credit table fetched from Strapi
 │   ├── graphql/
 │   │   ├── fetchAbout.gql      # Query: about single type
+│   │   ├── fetchCredits.gql    # Query: credits sorted by date
 │   │   └── fetchProjects.gql   # Query: projects filtered by Category
 │   ├── pages/
 │   │   ├── index.vue           # About page (bio, resume, cover image)
@@ -72,7 +73,6 @@
 
 ```
 Browser → Nuxt 3 (SSR/SSG) → Apollo Client (GraphQL) → Strapi 4 API (api.minguely.ch/graphql) → SQLite
-                             → Static JSON (credit.json) for FullCreditList
 ```
 
 ---
@@ -109,7 +109,7 @@ Browser → Nuxt 3 (SSR/SSG) → Apollo Client (GraphQL) → Strapi 4 API (api.m
 ### Business Logic Location
 
 - **No dedicated services/utils layer** in frontend — logic is inline in components
-- **Date parsing**: Inline `parseDate()` in `FullCreditList.vue`
+- **Date formatting**: Inline `formatDate()` in `FullCreditList.vue` (formats ISO `YYYY-MM-DD` as `DD.MM.YY`)
 - **Backend**: Pure Strapi core controllers/services/routers (no custom logic)
 
 ---
@@ -149,13 +149,13 @@ Browser → Nuxt 3 (SSR/SSG) → Apollo Client (GraphQL) → Strapi 4 API (api.m
 | cover        | Media (single)                |                                |
 | Category     | Enum: `video`, `music`, `dev` | Filtered in GraphQL query      |
 
-### `Credit` (Static JSON — not in CMS)
+### `Credit` (Collection Type)
 
-| Field    | Type   | Format      |
-| -------- | ------ | ----------- |
-| title    | String | Artist name |
-| date     | String | `DD.MM.YY`  |
-| location | String | Venue/event |
+| Field    | Type   | Format                 |
+| -------- | ------ | ---------------------- |
+| title    | String | Artist name (required) |
+| date     | Date   | `YYYY-MM-DD` (required)|
+| location | String | Venue/event (required) |
 
 ---
 
@@ -196,7 +196,7 @@ pm2 start ecosystem.config.js    # Starts .output/server/index.mjs
 - **GraphQL endpoint**: Hardcoded to `https://api.minguely.ch/graphql` in `nuxt.config.js` — no env variable abstraction
 - **Image provider**: Strapi images served via `nuxt-img` with `provider="strapi"` and base URL `https://api.minguely.ch/`
 - **Dev page hidden**: The `/dev` route exists but is commented out in `Sidebar.vue` navigation
-- **Credit list is static**: `FullCreditList.vue` reads from `assets/data/credit.json`, not from the CMS — dates use `DD.MM.YY` format and assume 2000s century
+- **Credit list from Strapi**: `FullCreditList.vue` fetches all credits via `fetchCredits.gql` (`sort: ["date:DESC", "id:ASC"]`, `pagination: { limit: -1 }`) and formats ISO dates as `DD.MM.YY`
 - **No TypeScript**: Entire project is JavaScript (`.js`, `.vue`, `.gql`) — no `.ts` files
 - **No tests**: No test framework configured
 - **CI node version**: Node 16 (pinned in GitHub Actions) — may need updating

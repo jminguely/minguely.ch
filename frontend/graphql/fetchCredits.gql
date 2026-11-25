@@ -1,0 +1,12 @@
+query fetchCredits {
+  credits(sort: ["date:DESC", "id:ASC"], pagination: { limit: -1 }) {
+    data {
+      id
+      attributes {
+        title
+        date
+        location
+      }
+    }
+  }
+}
